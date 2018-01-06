@@ -22,7 +22,9 @@ dat2 <- dat2[usr %in% dat2[, .N, usr][N > min_usr, usr]]
 # Optional: randomly sample 1000 users
 # dat2 <- dat2[usr %in% sample(unique(dat2[, usr]), 1000, replace = FALSE)]
 
-# Split the dataset into train, dev, and test set
+# Split data into train, dev, test
+# for every user, put the last 5 percent of products in test
+# and the next last 15 percent of remaining products in dev
 split_data <- function(dat2, test_prop = 0.05, dev_prop = 0.15, seed = 123, parallel = FALSE) {
   set.seed(seed)
   dat_trunc <- split(dat2, by = 'usr')
