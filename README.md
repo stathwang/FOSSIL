@@ -16,3 +16,5 @@ Since here we are interested in top-k recommendation (typically k = 10), the alg
 
 Run the *preprocess.R* script and then the *fossil.R* on *movielens_trunc.csv* file.
 
+I'm going to upload the python version of FOSSIL soon, so stay tuned.
+
