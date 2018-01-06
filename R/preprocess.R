@@ -32,7 +32,7 @@ split_data <- function(dat2, test_prop = 0.05, dev_prop = 0.15, seed = 123, para
     dev_idx <- tail(setdiff(seq_len(n), test_idx), floor(length(setdiff(seq_len(n), test_idx)) * dev_prop / (1-test_prop)))
     return(list(test = x[test_idx],
                 dev = x[dev_idx],
-                train = x[setdiff(seq_len(n), union(dev_idx, test_idx))]))
+                train = x[setdiff(seq_len(n), c(dev_idx, test_idx))]))
   }, .parallel = parallel)
   return(dat_split)
 }
