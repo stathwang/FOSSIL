@@ -14,5 +14,5 @@ FOSSIL is similar in spirit to FPMC but takes an inspiration from FISM (Factored
 
 Since here we are interested in top-k recommendation (typically k = 10), the algorithm minimizes the S-BPR (Sequential Bayesian Personalized Ranking) loss using stochastic gradient descent, one training sample at a time, to optimize the model parameters. S-BPR uses a sigmoid function to characterize the probability that a true item is ranked higher than a false item given a user and the model parameters, assuming independence of users and time steps.
 
-Run the *preprocess.R* script and then the *fossil.R* on movielens_trunc.csv file.
+Run the *preprocess.R* script and then the *fossil.R* on *movielens_trunc.csv* file.
 
