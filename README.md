@@ -1,6 +1,5 @@
 # FOSSIL
-Fusing Similarity Models with Markov Chains for Sparse Sequential Recommendation (He and McAuley, 2016)
-https://arxiv.org/pdf/1609.09152.pdf
+Paper: [Fusing Similarity Models with Markov Chains for Sparse Sequential Recommendation](https://arxiv.org/pdf/1609.09152.pdf) (He and McAuley, 2016)
 
 This repository contains my implementation of FOSSIL in R that predicts a user's next purchase based on the past purchase history. The algorithm uses a similarity-based method to reduce sparsity in modeling user preferences as well as higher order Markov chains to smooth user preferences across multiple time steps.
 
