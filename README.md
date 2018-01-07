@@ -3,6 +3,8 @@ Paper: [Fusing Similarity Models with Markov Chains for Sparse Sequential Recomm
 
 This repository contains my implementation of FOSSIL in R that predicts a user's next purchase based on the past purchase history. The algorithm uses a similarity-based method to reduce sparsity in modeling user preferences as well as higher order Markov chains to smooth user preferences across multiple time steps.
 
+![FOSSIL](/img/fossil_model.png)
+
 ### Main Ideas
 FOSSIL models both long-term **user preference** (matrix factorization) and short-term **sequential dynamics** (markov chains). Previously, there had been several attempts to model sequential dynamics and subsequently combine it with matrix factorization:
 
