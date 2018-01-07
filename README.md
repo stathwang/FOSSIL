@@ -14,6 +14,8 @@ FOSSIL models both long-term **user preference** (matrix factorization) and shor
 
 FOSSIL is similar in spirit to FPMC but takes an inspiration from **FISM** (Factored Item Similarity Models for Top-N Recommender Systems; Kabbur et al. 2013) to factorize item-item matrix in order to reduce sparsity by not having to explicitly model users and relaxes the first order Markov chain assumption of FPMC to higher orders.
 
+![FOSSIL2](/img/fossil_model2.png)
+
 Since here we are interested in top-k recommendation (typically k = 10), the algorithm minimizes the S-BPR (Sequential Bayesian Personalized Ranking) loss using stochastic gradient descent, one training sample at a time, to optimize the model parameters. S-BPR uses a sigmoid function to characterize the probability that a true item is ranked higher than a false item given a user and the model parameters, assuming independence of users and time steps.
 
 ### Instructions
